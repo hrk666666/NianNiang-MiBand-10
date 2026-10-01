@@ -1,0 +1,34 @@
+{
+  "name": "qlwh_miband_10",
+  "version": "1.0.0",
+  "description": "千恋＊万花（SAGA PLANETS）小米手环移植版 —— 采用 Sanoba-Witch-MiBand-10 的 VN 引擎与 UI，内容来自 qlwh-mibandported",
+  "author": "hrk_",
+  "license": "GPL-3.0",
+  "engines": {
+    "node": ">=8.10"
+  },
+  "scripts": {
+    "start": "aiot start --watch",
+    "build": "aiot build",
+    "release": "aiot release --enable-jsc",
+    "test": "node tests/run-tests.mjs && node tests/regression-qlwh.mjs",
+    "validate": "python3 tools/validate_qlwh.py",
+    "lint": "eslint --format codeframe --fix --ext .ux,.js src/"
+  },
+  "lint-staged": {
+    "*.{ux,js}": [
+      "prettier --write",
+      "eslint --format codeframe --fix",
+      "git add"
+    ],
+    "*.{less,css}": [
+      "prettier --write",
+      "stylelint --fix --custom-syntax postcss-less",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@aiot-toolkit/jsc": "^1.0.3",
+    "aiot-toolkit": "^2.0.5"
+  }
+}

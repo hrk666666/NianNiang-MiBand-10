@@ -1,0 +1,71 @@
+{
+  "title": "男娘恋爱物语",
+  "id": "nikoyuri",
+  "scenarioBase": "chunk",
+  "scenarios": {
+    "main": [
+      {
+        "id": "001",
+        "path": "chunk001.txt"
+      },
+      {
+        "id": "002",
+        "path": "chunk002.txt"
+      },
+      {
+        "id": "003",
+        "path": "chunk003.txt"
+      },
+      {
+        "id": "004",
+        "path": "chunk004.txt"
+      },
+      {
+        "id": "005",
+        "path": "chunk005.txt"
+      },
+      {
+        "id": "006",
+        "path": "chunk006.txt"
+      },
+      {
+        "id": "007",
+        "path": "chunk007.txt"
+      },
+      {
+        "id": "008",
+        "path": "chunk008.txt"
+      },
+      {
+        "id": "009",
+        "path": "chunk009.txt"
+      },
+      {
+        "id": "010",
+        "path": "chunk010.txt"
+      },
+      {
+        "id": "011",
+        "path": "chunk011.txt"
+      },
+      {
+        "id": "012",
+        "path": "chunk012.txt"
+      },
+      {
+        "id": "013",
+        "path": "chunk013.txt"
+      }
+    ]
+  },
+  "resources": {
+    "base": "/common",
+    "dirs": {
+      "bg": "bg",
+      "sd": "sd",
+      "ev": "ev",
+      "ch": "ch",
+      "audio": "audio"
+    }
+  }
+}
