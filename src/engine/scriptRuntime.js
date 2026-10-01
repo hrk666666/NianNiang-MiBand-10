@@ -261,6 +261,12 @@ export class ScriptRuntime {
     this._emit()
 
     const target = opt.jump
+    if (!target) {
+      // Ren'Py 语义：无 jump 的选项 = 顺序继续 menu 后的主线内容
+      this.lineIndex++
+      this._step()
+      return
+    }
     const idx = this.scriptData.findIndex(
       (n) => n[0] === SCN_TYPE.LABEL && n[1] === target
     )
